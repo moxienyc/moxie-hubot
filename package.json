@@ -5,7 +5,7 @@
   "author": "Udit",
   "description": "A simple helpful robot for your Company",
   "dependencies": {
-    "hubot-hipchat": "https://github.com/cheif/hubot-hipchat/tarball/master",
+    "hubot-hipchat": "^2.7.5",
     "hubot-maps": "0.0.1",
     "hubot-shipit": "^0.1.2",
     "hubot-help": "^0.1.1",
