@@ -25,7 +25,7 @@
     "phantom": "^0.7.2",
     "cheerio": "^0.18.0",
     "redis": "^0.12.1",
-    "instagram-node-lib": "*"
+    "instagram-node-lib": "0.1.1"
   },
   "engines": {
     "node": "0.10.x",
