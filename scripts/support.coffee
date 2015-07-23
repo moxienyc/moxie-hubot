@@ -22,14 +22,14 @@
 # Author:
 #   Crisoforo Gaspar
 
-printURL = (ticketNumber) ->
+getSupportURL = (ticketNumber) ->
   basePath = 'http://support.getmoxied.net/helpdesk/tickets/'
   invalidTicket = 'Invalid ticket number please verify'
   if isFinite(ticketNumber)
-  then console.log( basePath + ticketNumber )
-  else console.log(invalidTicket)
+  then return ( basePath + ticketNumber )
+  else return invalidTicket
 
 module.exports = (robot) ->
   # robot.hear /^(?:ticket|support|freshdesk)(?:\s*)(?:#)?(\d+$)/i, (msg) ->
   robot.hear /(?:ticket|support|freshdesk)(?:\s*)(?:#)?(\d+$)/i, (msg) ->
-    printURL(msg.match[1])
+    msg.send getSupportURL(msg.match[1])
