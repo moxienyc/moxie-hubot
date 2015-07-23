@@ -30,6 +30,5 @@ getSupportURL = (ticketNumber) ->
   else return invalidTicket
 
 module.exports = (robot) ->
-  # robot.hear /^(?:ticket|support|freshdesk)(?:\s*)(?:#)?(\d+$)/i, (msg) ->
   robot.hear /(?:ticket|support|freshdesk)(?:\s*)(?:#)?(\d+$)/i, (msg) ->
     msg.send getSupportURL(msg.match[1])
