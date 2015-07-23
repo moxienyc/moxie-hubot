@@ -1,6 +1,14 @@
 # Description:
 #   Retrives the URL of a support ticket, from freshdesk
 #
+#   can be used like:
+#   hubbot support #12
+#   hubbot ticket 12
+#   hubbot freshdesk #12
+#
+#   The # it's optional, and can be used support, ticket or freshdesk after
+#   the hubbot.
+#
 # Dependencies:
 #   None
 #
