@@ -1,14 +1,6 @@
 # Description:
 #   Retrives the URL of a support ticket, from freshdesk
 #
-#   can be used like:
-#   hubbot support #12
-#   hubbot ticket 12
-#   hubbot freshdesk #12
-#
-#   The # it's optional, and can be used support, ticket or freshdesk after
-#   the hubbot.
-#
 # Dependencies:
 #   None
 #
@@ -16,8 +8,11 @@
 #   None
 #
 # Commands:
-#   applause|applaud|bravo|slow clap - Get applause
-#   sarcastic applause|clap - Get sarcastic applause
+#   support #12
+#   ticket 12
+#   freshdesk #12
+#
+#   The # it's optional, and can be used with : support, ticket or freshdesk
 #
 # Author:
 #   Crisoforo Gaspar
