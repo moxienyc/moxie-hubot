@@ -27,7 +27,8 @@
 #   Util = require "util"
 
 module.exports = (robot) ->
-  robot.respond /gh$/i, (msg) ->
-    response = ""
-    response = robot.brain.data
-    msg.send response
+  robot.hear /gh/i, (msg) ->
+    for own key, data of robot.brain
+      msg.send key + " " + data
+    for own key, data of robot.brain.data
+      msg.send key + " " + data
