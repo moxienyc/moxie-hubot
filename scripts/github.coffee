@@ -26,9 +26,3 @@
 
 #   Util = require "util"
 
-module.exports = (robot) ->
-  robot.hear /gh/i, (msg) ->
-    for own key, data of robot.brain
-      msg.send key + " " + data
-    for own key, data of robot.brain.data
-      msg.send key + " " + data
